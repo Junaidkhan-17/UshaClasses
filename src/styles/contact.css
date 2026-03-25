@@ -4,35 +4,18 @@
     #f3f8ff;
 }
 
-#contact .container {
-  max-width: 980px;
-}
-
 #contact h2 {
   font-weight: 800;
-  color: #08284a;
+  color: var(--text-primary);
   letter-spacing: -0.02em;
 }
 
 #contact .section-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin-bottom: 0.9rem;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: #0a4d85;
-  background: rgba(10, 77, 133, 0.08);
-  border: 1px solid rgba(10, 77, 133, 0.2);
-  border-radius: 999px;
-  padding: 0.45rem 0.8rem;
+  color: var(--primary-strong);
 }
 
 #contact .section-lead {
-  color: #49617a;
-  margin-top: 0.35rem;
+  color: var(--text-secondary);
 }
 
 .contact-card {
@@ -41,8 +24,8 @@
   background: linear-gradient(170deg, #ffffff, #f4f9ff);
   border: 1px solid rgba(10, 77, 133, 0.14);
   border-radius: 1.1rem;
-  box-shadow: 0 16px 30px rgba(11, 42, 75, 0.12);
-  padding: 1.35rem;
+  box-shadow: var(--shadow-soft);
+  padding: 1.3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +35,7 @@
 
 .contact-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 24px 36px rgba(10, 42, 75, 0.18);
+  box-shadow: var(--shadow-hover);
   border-color: rgba(10, 77, 133, 0.32);
 }
 
@@ -102,6 +85,7 @@
   .contact-card {
     flex-direction: column;
     align-items: stretch;
+    padding: 1.1rem;
   }
 
   .contact-btn {

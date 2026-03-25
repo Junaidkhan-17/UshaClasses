@@ -1,33 +1,19 @@
 .admission {
-  padding: 88px 0;
+  padding: 5.5rem 0;
   background:
     radial-gradient(circle at 5% 15%, rgba(255, 255, 255, 0.2), transparent 28%),
     linear-gradient(120deg, #f06b1a, #ef4c4c 52%, #d82b65);
   color: #ffffff;
 }
 
-.admission .container {
-  max-width: 1120px;
-}
-
 .admission .section-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin-bottom: 0.9rem;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.06em;
   color: #fff8ef;
   background: rgba(255, 255, 255, 0.16);
   border: 1px solid rgba(255, 255, 255, 0.35);
-  border-radius: 999px;
-  padding: 0.45rem 0.8rem;
 }
 
 .admission h2 {
-  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-size: clamp(2rem, 4.5vw, 2.9rem);
   font-weight: 800;
   letter-spacing: -0.02em;
 }
@@ -88,4 +74,15 @@
   transform: translateY(-4px);
   background: rgba(5, 17, 30, 0.28);
   box-shadow: 0 15px 28px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 576px) {
+  .admission {
+    padding: 4.6rem 0;
+  }
+
+  .enroll-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
