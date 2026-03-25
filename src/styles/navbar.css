@@ -83,6 +83,10 @@
 }
 
 @media (max-width: 991px) {
+  .navbar-collapse.collapsing {
+    transition: height 0.34s ease;
+  }
+
   .navbar-collapse {
     margin-top: 0.9rem;
     padding: 0.8rem;

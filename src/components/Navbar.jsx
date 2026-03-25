@@ -1,62 +1,61 @@
+import { useCallback, useRef } from "react";
 import "../styles/navbar.css";
-import { FiAward, FiBookOpen } from "react-icons/fi";
+import Collapse from "bootstrap/js/dist/collapse";
 import ushalogo from "../assets/ushalogo.png";
-import ushaname from "../assets/ushaname.png"
+import ushaname from "../assets/ushaname.png";
 
 function Navbar() {
+  const navMenuRef = useRef(null);
+
+  const closeMobileMenu = useCallback(() => {
+    if (window.innerWidth >= 992 || !navMenuRef.current) return;
+    if (!navMenuRef.current.classList.contains("show")) return;
+
+    const collapse = Collapse.getOrCreateInstance(navMenuRef.current);
+    collapse.hide();
+  }, []);
+
+  const links = [
+    { href: "#home", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#courses", label: "Courses" },
+    { href: "#classes", label: "Classes" },
+    { href: "#admission", label: "Admission" },
+    { href: "https://wa.me/919421516346", label: "Contact", cta: true },
+  ];
+
   return (
     <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container">
         <a className="navbar-brand" href="#home">
-          <img className="logo" src={ushalogo} alt="logo"/>
-          <img className="name" src={ushaname} alt="logoname"/>
+          <img className="logo" src={ushalogo} alt="logo" />
+          <img className="name" src={ushaname} alt="logoname" />
         </a>
         <button
+          type="button"
           className="navbar-toggler"
           data-bs-toggle="collapse"
           data-bs-target="#navmenu"
+          aria-controls="navmenu"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navmenu">
+        <div className="collapse navbar-collapse" id="navmenu" ref={navMenuRef}>
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <a href="#home" className="nav-link">
-                Home
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a href="#about" className="nav-link">
-                About
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a href="#courses" className="nav-link">
-                Courses
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a href="#classes" className="nav-link">
-                Classes
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a href="#admission" className="nav-link">
-                Admission
-              </a>
-            </li>
-
-            <li className="nav-item">
-              <a href="https://wa.me/919421516346" className="nav-link nav-cta">
-                Contact
-              </a>
-            </li>
+            {links.map((link) => (
+              <li className="nav-item" key={link.label}>
+                <a
+                  href={link.href}
+                  className={`nav-link ${link.cta ? "nav-cta" : ""}`.trim()}
+                  onClick={closeMobileMenu}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
