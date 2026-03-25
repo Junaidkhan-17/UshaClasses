@@ -1,0 +1,91 @@
+.admission {
+  padding: 88px 0;
+  background:
+    radial-gradient(circle at 5% 15%, rgba(255, 255, 255, 0.2), transparent 28%),
+    linear-gradient(120deg, #f06b1a, #ef4c4c 52%, #d82b65);
+  color: #ffffff;
+}
+
+.admission .container {
+  max-width: 1120px;
+}
+
+.admission .section-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff8ef;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+}
+
+.admission h2 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.admission-lead {
+  font-size: 1.02rem;
+  opacity: 0.95;
+  margin: 0.75rem 0 0;
+}
+
+.admission-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(3px);
+  transition: transform 0.28s ease, background-color 0.28s ease;
+}
+
+.admission-card span {
+  font-size: 1.45rem;
+}
+
+.admission-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.admission-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.enroll-btn {
+  margin-top: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0.85rem 1.45rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  background: rgba(5, 17, 30, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.enroll-btn:hover {
+  transform: translateY(-4px);
+  background: rgba(5, 17, 30, 0.28);
+  box-shadow: 0 15px 28px rgba(0, 0, 0, 0.25);
+}

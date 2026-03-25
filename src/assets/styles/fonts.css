@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Thaloria";
+  src: url("../assets/fonts/Thaloria-Regular.otf");
+}
+
+@font-face {
+  font-family: "FleurMirage";
+  src: url("../assets/fonts/FleurMirage-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ======================================
+   LABRADA FONT FAMILY (WOFF2)
+   ====================================== */
+
+/* Thin */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Thin Italic */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-ThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ExtraLight */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ExtraLight Italic */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-ExtraLightItalic.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Light */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Regular */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SemiBold Italic */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-SemiBoldItalic.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ExtraBold Italic */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-ExtraBoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Black */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Black Italic */
+@font-face {
+  font-family: "Labrada";
+  src: url("../assets/fonts/Labrada-BlackItalic.woff2") format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
