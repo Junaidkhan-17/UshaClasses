@@ -5,17 +5,15 @@
 }
 
 #courses h2 {
-  font-weight: 800;
   color: var(--primary);
-  letter-spacing: -0.02em;
 }
 
 .course-card {
   height: 100%;
-  background: linear-gradient(170deg, rgba(7, 32, 57, 0.14), rgba(7, 32, 57, 0.34));
+  background: linear-gradient(170deg, rgba(7, 32, 57, 0.18), rgba(7, 32, 57, 0.36));
   border-radius: 1rem;
-  padding: 1.5rem 1.1rem;
-  border: 1px solid rgba(13, 60, 102, 0.18);
+  padding: 1.45rem 1.05rem;
+  border: 1px solid rgba(13, 60, 102, 0.22);
   box-shadow: var(--shadow-soft);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   position: relative;
@@ -32,6 +30,19 @@
   z-index: 0;
 }
 
+.course-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(3, 20, 36, 0.06), rgba(3, 20, 36, 0.74));
+  z-index: 0;
+}
+
+.course-card * {
+  position: relative;
+  z-index: 1;
+}
+
 .course-icon {
   width: 3rem;
   height: 3rem;
@@ -39,28 +50,22 @@
   border-radius: 0.9rem;
   display: grid;
   place-items: center;
-  font-size: 1.32rem;
+  font-size: 1.26rem;
   color: #06345e;
   background: linear-gradient(130deg, rgba(185, 232, 255, 0.95), rgba(133, 203, 238, 0.88));
-  position: relative;
-  z-index: 1;
 }
 
 .course-card h5 {
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 0.32rem;
-  position: relative;
-  z-index: 1;
-  font-size: clamp(1.5rem, 4.1vw, 2.05rem);
+  font-size: clamp(1.35rem, 3.2vw, 1.8rem);
 }
 
 .course-card p {
   margin: 0;
   color: rgba(239, 248, 255, 0.95);
-  font-size: clamp(0.95rem, 2.2vw, 1.15rem);
-  position: relative;
-  z-index: 1;
+  font-size: clamp(0.92rem, 2.2vw, 1.05rem);
   font-weight: 600;
 }
 
@@ -70,22 +75,9 @@
   box-shadow: var(--shadow-hover);
 }
 
-.course-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(3, 20, 36, 0.05), rgba(3, 20, 36, 0.72));
-  z-index: 0;
-}
-
-.course-card * {
-  position: relative;
-  z-index: 1;
-}
-
 @media (max-width: 768px) {
   .course-card {
-    min-height: 208px;
-    padding: 1.4rem 1rem;
+    min-height: 198px;
+    padding: 1.3rem 0.95rem;
   }
 }

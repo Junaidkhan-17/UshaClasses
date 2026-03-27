@@ -1,5 +1,6 @@
 import "../styles/about.css";
 import { FiAward, FiBookOpen, FiCheckCircle, FiUserCheck } from "react-icons/fi";
+import sir from "../assets/sir.jpeg";
 
 function About() {
   const highlights = [
@@ -26,23 +27,43 @@ function About() {
         <p className="section-chip">
           <FiCheckCircle /> Why Students Choose Us
         </p>
+
         <h2 className="mb-3">About USHA Classes</h2>
+
         <p className="about-intro">
           USHA Classes provides quality education for students from
           8th to 12th standard. Our experienced faculty focuses on
           conceptual learning and exam preparation.
         </p>
 
-        <div className="row mt-4 g-4">
-          {highlights.map((item) => (
-            <div className="col-md-4" key={item.title}>
-              <div className="card about-card">
-                <span className="about-icon">{item.icon}</span>
-                <h5>{item.title}</h5>
-                <p>{item.text}</p>
-              </div>
+        {/* Main Layout */}
+        <div className="row align-items-center mt-4">
+
+          {/* LEFT: Highlights */}
+          <div className="col-lg-7">
+            <div className="row g-4">
+              {highlights.map((item) => (
+                <div className="col-md-4" key={item.title}>
+                  <div className="card about-card">
+                    <span className="about-icon">{item.icon}</span>
+                    <h5>{item.title}</h5>
+                    <p>{item.text}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* RIGHT: Image */}
+          <div className="col-lg-5 text-center">
+            <img
+              src={sir}
+              alt="Tuition Sir"
+              className="sir-image"           
+            />
+            <h4 className="image-head"> Sr. Ajay Kumar Singh</h4>  
+          </div>
+
         </div>
       </div>
     </section>

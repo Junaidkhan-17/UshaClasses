@@ -1,21 +1,21 @@
 :root {
-  --bg-page: #f4f8fc;
+  --bg-page: #f3f8ff;
   --surface: #ffffff;
   --surface-muted: #f7fbff;
-  --text-primary: #102a43;
-  --text-secondary: #486581;
+  --text-primary: #0f2f50;
+  --text-secondary: #4a6784;
   --text-inverse: #f8fbff;
-  --primary: #0d63bf;
-  --primary-strong: #094d95;
-  --accent: #f08a24;
-  --success: #1b9c5a;
-  --border-soft: rgba(16, 42, 67, 0.12);
-  --border-strong: rgba(16, 42, 67, 0.2);
-  --shadow-soft: 0 12px 26px rgba(12, 38, 64, 0.1);
-  --shadow-hover: 0 20px 36px rgba(8, 28, 50, 0.16);
-  --radius-sm: 0.75rem;
+  --primary: #0c61b8;
+  --primary-strong: #084985;
+  --accent: #f28a1d;
+  --success: #1e9d5c;
+  --border-soft: rgba(15, 47, 80, 0.12);
+  --border-strong: rgba(15, 47, 80, 0.22);
+  --shadow-soft: 0 14px 28px rgba(8, 38, 70, 0.1);
+  --shadow-hover: 0 20px 36px rgba(8, 32, 60, 0.16);
+  --radius-sm: 0.8rem;
   --radius-md: 1rem;
-  --radius-lg: 1.2rem;
+  --radius-lg: 1.3rem;
 }
 
 *,
@@ -32,7 +32,10 @@ body {
   margin: 0;
   font-family: "Labrada", "Segoe UI", Tahoma, sans-serif;
   color: var(--text-primary);
-  background: var(--bg-page);
+  background:
+    radial-gradient(circle at 8% 8%, rgba(126, 224, 255, 0.2), transparent 34%),
+    radial-gradient(circle at 92% 4%, rgba(242, 138, 29, 0.12), transparent 30%),
+    var(--bg-page);
 }
 
 #root {
@@ -40,6 +43,7 @@ body {
 }
 
 section {
+  position: relative;
   scroll-margin-top: 92px;
 }
 
@@ -51,7 +55,13 @@ h5,
 h6 {
   margin: 0;
   font-family: "Labrada", "Segoe UI", Tahoma, sans-serif;
-  line-height: 1.18;
+  line-height: 1.16;
+  letter-spacing: -0.015em;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 3.6vw, 2.85rem);
+  font-weight: 800;
 }
 
 p {
@@ -76,17 +86,18 @@ a {
   border: 1px solid rgba(13, 99, 191, 0.25);
   background: rgba(13, 99, 191, 0.08);
   color: var(--primary-strong);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.065em;
   text-transform: uppercase;
 }
 
 .section-lead {
-  margin-top: 0.5rem;
+  margin-top: 0.55rem;
   color: var(--text-secondary);
-  font-size: 1rem;
+  font-size: clamp(0.98rem, 1.6vw, 1.08rem);
   line-height: 1.75;
+  max-width: 760px;
 }
 
 @media (max-width: 991px) {
@@ -101,12 +112,12 @@ a {
   }
 
   .section-chip {
-    font-size: 0.7rem;
-    letter-spacing: 0.05em;
+    font-size: 0.68rem;
+    letter-spacing: 0.045em;
   }
 
   .section-lead {
     font-size: 0.95rem;
-    line-height: 1.65;
+    line-height: 1.62;
   }
 }

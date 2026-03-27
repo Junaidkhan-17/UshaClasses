@@ -7,8 +7,6 @@
 
 #classes h2 {
   color: #ffffff;
-  font-weight: 800;
-  letter-spacing: -0.02em;
 }
 
 #classes .section-chip {
@@ -18,7 +16,6 @@
 }
 
 #classes .section-lead {
-  max-width: 760px;
   margin: 0.45rem auto 0;
   color: rgba(232, 245, 255, 0.9);
 }
@@ -28,7 +25,7 @@
   text-align: center;
   background: rgba(255, 255, 255, 0.97);
   color: #06233f;
-  padding: 1.25rem 0.9rem;
+  padding: 1.2rem 0.9rem;
   border-radius: 1rem;
   border: 1px solid rgba(9, 58, 102, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -50,7 +47,7 @@
 .class-card h5 {
   margin-bottom: 0.3rem;
   font-weight: 800;
-  font-size: 1.15rem;
+  font-size: 1.12rem;
 }
 
 .class-card p {
@@ -77,6 +74,6 @@
 
 @media (max-width: 576px) {
   .class-card {
-    padding: 1.1rem 0.85rem;
+    padding: 1.05rem 0.8rem;
   }
 }
