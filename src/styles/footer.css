@@ -77,6 +77,33 @@
   text-align: center;
 }
 
+.right-corner {
+  display: flex;
+  flex-direction: row; /* Stacks the <h4> and <a> vertically */
+  align-items: right;    /* Centers items horizontally */
+  justify-content: right; /* Centers items vertically if there is extra height */
+  text-align: right;
+  width: 100%;
+}
+
+.right-corner h4{
+  margin: 0 0 10px 0;     /* Removes default margins and adds a bottom gap */
+  font-size: 0.7rem;      /* Adjust text size as needed */
+  text-transform: uppercase;
+}
+
+.logo{
+  display: block;
+  width: 150px;       /* Constrains logo size */
+  height: auto;           /* Maintains aspect ratio */
+  transition: opacity 0.3s;
+  height: 50px;
+}
+
+.logo:hover {
+  opacity: 0.8;           /* Subtle feedback when hovering */
+}
+
 @media (max-width: 900px) {
   .footer-grid {
     grid-template-columns: 1fr;

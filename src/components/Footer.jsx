@@ -1,5 +1,12 @@
 import "../styles/footer.css";
-import { FiFacebook, FiInstagram, FiMail, FiPhoneCall, FiYoutube } from "react-icons/fi";
+import {
+  FiFacebook,
+  FiInstagram,
+  FiMail,
+  FiPhoneCall,
+  FiYoutube,
+} from "react-icons/fi";
+import webdockwhitelogo from "../assets/webdockwhitelogo.png";
 
 function Footer() {
   return (
@@ -34,6 +41,17 @@ function Footer() {
         </div>
 
         <p className="copyright">© 2026 USHA Classes. All rights reserved.</p>
+      </div>
+
+      <div className="right-corner">
+        <h4>powered by</h4>
+        <a
+          href="https://webdockstudios.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img className="logo" src={webdockwhitelogo} alt="Designer" />
+        </a>
       </div>
     </footer>
   );

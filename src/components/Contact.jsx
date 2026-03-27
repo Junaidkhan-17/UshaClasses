@@ -2,7 +2,7 @@ import "../styles/contact.css";
 import { FiCheckCircle, FiMapPin, FiMessageCircle, FiPhoneCall } from "react-icons/fi";
 
 function Contact() {
-  const phoneNumbers = ["9421516346", "8600047629"];
+  const phoneNumbers = ["9421516346", "8010501839"];
 
   return (
     <section id="contact" className="py-5">
@@ -17,7 +17,7 @@ function Contact() {
           <div className="contact-list">
             {phoneNumbers.map((num) => (
               <a key={num} href={`tel:+91${num}`}>
-                <FiPhoneCall /> +91 {num}
+                <h3><FiPhoneCall /> +91 {num}</h3>
               </a>
             ))}
             <p className="contact-location">
