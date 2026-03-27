@@ -77,6 +77,11 @@
   .about-intro {
     margin-bottom: 1rem;
   }
+
+    .image-head {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -86,5 +91,6 @@
 
   .image-head {
     margin-bottom: 0;
+    font-size: 1.5rem;
   }
 }
