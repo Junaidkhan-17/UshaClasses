@@ -22,8 +22,8 @@ function Footer() {
             <a href="tel:+919421516346">
               <FiPhoneCall /> +91 9421516346
             </a>
-            <a href="mailto:ushaclasses@example.com">
-              <FiMail /> ushaclasses@example.com
+            <a href="mailto:ajaykumarsingh47629@gmail.com">
+              <FiMail /> ajaykumarsingh47629@gmail.com
             </a>
           </div>
 

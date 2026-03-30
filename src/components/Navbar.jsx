@@ -1,8 +1,8 @@
 import { useCallback, useRef } from "react";
 import "../styles/navbar.css";
 import Collapse from "bootstrap/js/dist/collapse";
-import ushalogo from "../assets/ushalogo.png";
-import ushaname from "../assets/ushaname.png";
+import ushabglogo from "../assets/ushabglogo.png";
+//import ushaname from "../assets/ushaname.png";
 
 function Navbar() {
   const navMenuRef = useRef(null);
@@ -28,8 +28,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container">
         <a className="navbar-brand" href="#home">
-          <img className="logo" src={ushalogo} alt="logo" />
-          <img className="name" src={ushaname} alt="logoname" />
+          <img className="logo" src={ushabglogo} alt="logo" />
         </a>
         <button
           type="button"

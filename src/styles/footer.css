@@ -3,7 +3,8 @@
     radial-gradient(circle at 86% 22%, rgba(126, 224, 255, 0.2), transparent 35%),
     linear-gradient(120deg, #051426, #082743 60%, #0a355d);
   color: #ebf6ff;
-  padding: 2.4rem 0 1.2rem;
+  padding: 2.4rem 0 3.2rem;
+  position: relative;
 }
 
 .footer-grid {
@@ -78,12 +79,15 @@
 }
 
 .right-corner {
+  position: absolute;
+  right: clamp(0.9rem, 4vw, 2.4rem);
+  bottom: 0.9rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 0.45rem;
-  width: min(1120px, 92%);
-  margin: 0.9rem auto 0;
+  width: auto;
+  margin: 0;
 }
 
 .right-corner h4 {
@@ -121,7 +125,12 @@
   }
 
   .right-corner {
-    justify-content: center;
-    width: min(1120px, 94%);
+    right: 0.75rem;
+    bottom: 0.75rem;
+    justify-content: flex-end;
+  }
+
+  .footer .logo {
+    width: 112px;
   }
 }
