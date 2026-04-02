@@ -3,6 +3,9 @@
     radial-gradient(circle at 5% 15%, rgba(255, 255, 255, 0.2), transparent 28%),
     linear-gradient(120deg, #f06b1a, #ef4c4c 52%, #d82b65);
   color: #ffffff;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
 }
 
 .admission .section-chip {
@@ -12,11 +15,12 @@
 }
 
 .admission h2 {
-  font-size: clamp(2rem, 4.5vw, 2.9rem);
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .admission-lead {
-  font-size: 1rem;
+  font-size: 1.5rem;
   opacity: 0.95;
   margin: 0.72rem auto 0;
   max-width: 560px;
@@ -39,12 +43,12 @@
 }
 
 .admission-card span {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
 }
 
 .admission-card p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   line-height: 1.5;
 }
 
@@ -75,6 +79,10 @@
 }
 
 @media (max-width: 576px) {
+  .admission {
+    min-height: 540px;
+  }
+
   .enroll-btn {
     width: 100%;
     justify-content: center;

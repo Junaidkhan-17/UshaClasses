@@ -16,7 +16,7 @@ function Classes() {
         <p className="section-chip">
           <FiCheckCircle /> Class Structure
         </p>
-        <h2>Classes Available</h2>
+        <h2 className="cla-2">Classes Available</h2>
         <p className="section-lead">
           Smart scheduling with focused batches for each standard and exam stage.
         </p>

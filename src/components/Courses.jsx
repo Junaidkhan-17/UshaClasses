@@ -23,7 +23,7 @@ function Courses() {
         <p className="section-chip">
           <FiCheckCircle /> Academic Programs
         </p>
-        <h2>Subjects We Teach</h2>
+        <h2 className="sub-2">Subjects We Teach</h2>
         <p className="section-lead">
           Dedicated modules, chapter-wise tests and doubt sessions for school and competitive readiness.
         </p>

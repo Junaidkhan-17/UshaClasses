@@ -77,7 +77,7 @@ function Hero() {
               <FiCheckCircle />
             </div>
             <div>
-              <h3>95%</h3>
+              <h3>100%</h3>
               <p>Result Consistency</p>
             </div>
           </article>

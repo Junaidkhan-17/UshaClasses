@@ -32,6 +32,11 @@
   box-shadow: 0 12px 22px rgba(6, 19, 35, 0.2);
 }
 
+.cla-2{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .class-icon {
   width: 2.6rem;
   height: 2.6rem;

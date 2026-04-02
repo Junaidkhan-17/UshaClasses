@@ -10,7 +10,7 @@ function Contact() {
         <p className="section-chip">
           <FiCheckCircle /> Get In Touch
         </p>
-        <h2>Contact Us</h2>
+        <h2 className="con-2">Contact Us</h2>
         <p className="section-lead">Talk to our team for admissions, batches and counseling.</p>
 
         <div className="contact-card">

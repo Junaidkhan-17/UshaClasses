@@ -8,6 +8,11 @@
   color: var(--text-primary);
 }
 
+.mb-3{
+  font-size: 3rem;
+  font-weight: 700;
+}
+
 .about-intro {
   max-width: 780px;
   color: var(--text-secondary);
